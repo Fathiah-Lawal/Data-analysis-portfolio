@@ -1,0 +1,50 @@
+Create a Calendar table
+Calendar Table=Calendar(min(car_data([Date]),max(car_data([Date]))
+Create the year column
+Year=Year(Calendar Table[Date])
+Also create the month column
+Month=Format(Calendar Table[date]),"mmmm")
+Create a week column
+Week=Weeknum(Calendar Table[Date])
+
+Under the Data model view,create a relationship between the calendar table and the car_data table.
+Drag the date under the calendar table to the car_data to create a relationship between the tables.
+Upload the background image given to you in your project i.e the car sales background 1.
+Measures 
+Create a measure by right-clicking on the car_sales data to create YTD Total sales
+
+YTD Total Sales=Totalytd(sum(car_data[Price]),calendar table[date])
+Create another measure by right-clicking on the car sales data
+PYTD Total sales=calculate(sum(car_data[Price]),sameperiodlastyear(calendar table[Date]))
+Create another measure to calculate the sales difference between
+ Sales diff=[YTD total sales]-[PYTD total sales]
+
+YOY Sales Growth=[Sales diff]/[PYTD total sales]
+Ensure this is formatted to a percentage.
+
+MTD Total Sales=totalmtd(sum(car_data[Price]),calendar table[date])
+
+YTD Avg Price=Totalytd([Avg Price],Calendar Table[Date])
+PYTD Avg Price=calculate([Avg Price],sameperiodlastyear(calendar table[date]))
+Avg Price diff=[YTD Avg Price]-[PYTD Avg Price]
+
+YOY Avg Price Growth=[Avg Price diff]/[PYTD Avg Price]
+MTD Avg Price=Totalmtd([Avg Price],calendar table[date])
+
+YTD Car sold=totalytd(count(car_data[car_id]),calendar table[date])
+PYTD Car Sold=calculate(count(car_data[car_id]),sameperiodlastyear(calendar table[date])
+Car Sold diff=[ytd car sold]-[pytd car sold]
+
+Create card visuals for these measures
+
+Then follow the instructions in creating the visuals  needed for this project...
+
+Thank you.
+
+
+
+
+
+
+
+
