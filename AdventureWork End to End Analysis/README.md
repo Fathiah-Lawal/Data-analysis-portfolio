@@ -15,7 +15,7 @@ This project involves analyzing sales data to identify key trends and insights a
 
 ## How to Access the Data
 The analyzed dataset and workbook can be accessed here:  
-[Google Sheet Link]()  
+[Google Sheet Link](https://docs.google.com/spreadsheets/d/1VbBvkr-xzle_mx-Coa8wK_5z1z_XuVTl/edit?usp=sharing&ouid=113931195152831690658&rtpof=true&sd=true)  
 
 *Note:* If the Google Sheet link requires access, please request permission to view or edit.  
 
