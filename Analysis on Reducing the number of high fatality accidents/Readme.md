@@ -73,4 +73,6 @@ The analysis suggests targeted strategies such as:
 * NumPy
 * Matplotlib
 * Jupyter Notebook
-* Create a polished PDF version of the report
+
+
+Link to published competition on datacamp: https://www.datacamp.com/datalab/w/ef4f569b-1a05-4fc5-b97b-2ec0fa2b6b56
